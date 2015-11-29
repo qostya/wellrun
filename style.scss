@@ -164,7 +164,9 @@ a {
   line-height: 0;
 }
 
-a, button, input {
+a,
+button,
+input {
   &.css-btn-empty {
     padding: 9px 20px 6px;
     display: inline-block;

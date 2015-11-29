@@ -105,7 +105,9 @@ a {
 .lh-0 {
   line-height: 0; }
 
-a.css-btn-empty, button.css-btn-empty, input.css-btn-empty {
+a.css-btn-empty,
+button.css-btn-empty,
+input.css-btn-empty {
   padding: 9px 20px 6px;
   display: inline-block;
   border: 1px solid #cb3034;
@@ -117,7 +119,11 @@ a.css-btn-empty, button.css-btn-empty, input.css-btn-empty {
   transition: background 0.3s, color 0.3s;
   font-weight: 400;
   text-transform: uppercase; }
-  a.css-btn-empty:hover, a.css-btn-empty:focus, button.css-btn-empty:hover, button.css-btn-empty:focus, input.css-btn-empty:hover, input.css-btn-empty:focus {
+  a.css-btn-empty:hover, a.css-btn-empty:focus,
+  button.css-btn-empty:hover,
+  button.css-btn-empty:focus,
+  input.css-btn-empty:hover,
+  input.css-btn-empty:focus {
     background: #cb3034;
     color: #fff;
     text-decoration: none; }
