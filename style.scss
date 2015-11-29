@@ -8,6 +8,10 @@ body, ul, li, ol, p, img {
   border: none;
 }
 
+input {
+  font-family: "Roboto", sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -20,14 +24,100 @@ a {
 .b-header {
   position: relative;
 
+
+  &_search {
+    position: relative;
+
+    &_field {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      line-height: 50px;
+
+      input {
+        height: 50px;
+        background: #dddfe3;
+        border: none;
+        outline: none;
+        padding: 0;
+        text-indent: 10px;
+        color: #000;
+        font-size: 15px;
+        font-weight: 400;
+        display: none;
+        width: 0;
+
+        &:focus {
+          width: 164px !important;
+        }
+      }
+    }
+
+    &_icon {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-color: #d6282d;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &_info {
+    padding-top: 20px;
+  }
+
+  &_call-me {
+    padding-top: 5px;
+  }
+
   &_logo {
     position: absolute;
     top: 10px;
   }
 
+  &_phone {
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    small {
+      letter-spacing: 0.4px;
+      color: #7f7f7f;
+    }
+
+    &-icon {
+      width: 33px;
+      height: 33px;
+      display: block;
+      margin: 3px 15px 0 0;
+    }
+  }
+
+  &_company-name {
+    line-height: 16px;
+
+    strong {
+      font-size: 13px;
+      color: #3d4045;
+    }
+
+    h5 {
+      font-size: 30px;
+      color: #d6282d;
+      font-weight: 900;
+      margin: 0;
+    }
+  }
+
   &_top {
     background: #3d4045;
     color: #fff;
+    -webkit-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
+    -moz-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
+    box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
 
     .navbar-nav {
       height: 50px;
@@ -52,6 +142,7 @@ a {
 
     &:hover {
       background: #5d6066;
+      cursor: default!important;
     }
 
     > div {
@@ -69,18 +160,35 @@ a {
   }
 }
 
-.b-icon {
-  &_search {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background-color: #d6282d;
-  }
-}
-
 .lh-0 {
   line-height: 0;
 }
+
+a, button, input {
+  &.css-btn-empty {
+    padding: 9px 20px 6px;
+    display: inline-block;
+    border: 1px solid #cb3034;
+    color: #cb3034;
+    -webkit-transition: background 0.3s, color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s;
+    -ms-transition: background 0.3s, color 0.3s;
+    -o-transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background: #cb3034;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
 
 
 
