@@ -6,7 +6,7 @@
         function($stateProvider, $urlRouterProvider) {
 
             $urlRouterProvider.otherwise("/");
-            
+
             $stateProvider
                 .state('index', {
                     abstract: true,
