@@ -58,7 +58,10 @@
                         '': {
                             templateUrl: 'templates/main.html',
                             controller: function ($scope) {
-
+                                $('.b-main-slider_wrapper').bxSlider({
+                                    prevText: '',
+                                    nextText: ''
+                                });
                             }
                         }
                     }

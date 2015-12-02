@@ -128,4 +128,35 @@ input.css-btn-empty {
     color: #fff;
     text-decoration: none; }
 
+.b-main-slider {
+  margin-top: 20px; }
+  .b-main-slider li {
+    position: relative; }
+  .b-main-slider .bx-wrapper {
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .b-main-slider_block-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+  .b-main-slider_first-block {
+    width: 470px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 40px 55px;
+    background: rgba(255, 255, 255, 0.8); }
+    .b-main-slider_first-block h2 {
+      font-weight: 200;
+      font-size: 36px;
+      margin: 0; }
+    .b-main-slider_first-block strong {
+      font-weight: 500; }
+
 /*# sourceMappingURL=style.css.map */
