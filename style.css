@@ -158,5 +158,32 @@ input.css-btn-empty {
       margin: 0; }
     .b-main-slider_first-block strong {
       font-weight: 500; }
+  .b-main-slider_pager {
+    text-align: center; }
+    .b-main-slider_pager ul {
+      display: inline-block; }
+    .b-main-slider_pager_item {
+      display: inline-block;
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #000;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin-left: 5px; }
+      .b-main-slider_pager_item:before {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        z-index: 2; }
 
 /*# sourceMappingURL=style.css.map */
