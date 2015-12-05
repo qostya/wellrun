@@ -5,7 +5,7 @@
     myApp.config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise("/");
+            $urlRouterProvider.otherwise("/index");
 
             $stateProvider
                 .state('index', {
@@ -53,7 +53,7 @@
                     }
                 })
                 .state('index.main', {
-                    url: '/',
+                    url: '/index',
                     views: {
                         '': {
                             templateUrl: 'templates/main.html',
@@ -80,8 +80,6 @@
                                     prevSelector: $('.b-main-slider_pager_arrow-left'),
                                     speed: 400
                                 });
-
-
                             }
                         }
                     }

@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   padding-bottom: 150px;
   font-size: 14px;
+  background: #e9ecf3;
 }
 
 input {
@@ -168,21 +169,40 @@ a {
   line-height: 0;
 }
 
-a,
-button,
-input {
+a {
   &.css-btn-empty {
     padding: 9px 20px 6px;
     display: inline-block;
     border: 1px solid #cb3034;
     color: #cb3034;
-    -webkit-transition: background 0.3s, color 0.3s;
-    -moz-transition: background 0.3s, color 0.3s;
-    -ms-transition: background 0.3s, color 0.3s;
-    -o-transition: background 0.3s, color 0.3s;
-    transition: background 0.3s, color 0.3s;
+    -webkit-transition: background 0.3s, color 0.3s, border-color 0.3s;
+    -moz-transition: background 0.3s, color 0.3s, border-color 0.3s;
+    -ms-transition: background 0.3s, color 0.3s, border-color 0.3s;
+    -o-transition: background 0.3s, color 0.3s, border-color 0.3s;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
     font-weight: 400;
     text-transform: uppercase;
+
+    &__black {
+      border: 1px solid #3d4045;
+      color: #3d4045;
+
+      &:hover,
+      &:focus {
+        background: #3d4045 !important;
+      }
+    }
+
+    &__white {
+      border-color: #d7d8d9;
+      color: #d7d8d9;
+
+      &:hover,
+      &:focus {
+        background: #d7d8d9 !important;
+        color: #000!important;
+      }
+    }
 
     &:hover,
     &:focus {
@@ -191,6 +211,38 @@ input {
       text-decoration: none;
     }
   }
+
+  &.css-link-with-icon {
+    color: #d6282d;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: #d6282d;
+      text-decoration: none;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      line-height: 14px;
+      vertical-align: middle;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAYAAAC3mX7tAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWdJREFUeNqUlD9LQzEUR19fa/2z+BUcHRwLTgou4qCbuClOuggKLoLiIoKLddBJP0FBdBAEBRFcVBDBDuKXcBW0tc9zy68lprHPFzgNaXJyb3LT5pIkifw2PjE5S3cEDag7Uz3wcnd7PRV1tq5OIRAkpruEfdiEQW9JHAiS6hTY2CJOw6iEWJkdwByUPOlTWWZy7ESrsKsN7MhnUIRjGInCLbNjgdbgBjYkvcMeLEZ/t8yOBRqABwpcVY3KAcEK/ApDcvrMgarmU51YGRWdhzAcSOgcxmBH9Wg7Gqc6rReUsw9O1dDEmyNcwDb0w6Hq03aUearT8VQJdq9ruIITWIFlWIca85VA9l0dqLQC1b1gj3Qz9Ev0eViwe2bsrqt7wZoO/HJa6yxQr4rrn6zm1MCEb2c66Cj7oGODJ5jnIdh/0YeysZZoYUkv89nZsOlozb+cgu6xrDv98jLM60e5BafO95mdHwEGAIwegrIrX0wXAAAAAElFTkSuQmCC') no-repeat;
+      margin-left: 10px;
+    }
+
+    &__white {
+      &:after {
+        background-position: -13px 0;
+      }
+    }
+  }
+}
+
+.css-text-white {
+  color: #fff !important;
 }
 
 .b-main-slider {
@@ -234,7 +286,7 @@ input {
     h2 {
       font-weight: 200;
       font-size: 36px;
-      margin: 0;
+      margin: 0 0 20px;
     }
 
     strong {
@@ -303,6 +355,7 @@ input {
     text-align: center;
     font-size: 0;
     margin-top: -50px;
+    margin-bottom: 70px;
 
     ul {
       display: inline-block;
@@ -381,9 +434,92 @@ input {
 
 }
 
+.b-main-services {
+  text-align: center;
 
+  &_item {
+    position: relative;
+    height: 155px;
+    display: inline-block;
+    width: 194px;
+    border: 3px solid #3d4045;
+    padding-top: 11px;
+    margin-bottom: 30px;
 
+    &_holder {
+      position: relative;
+      z-index: 2;
+    }
 
+    &:hover &_line{
+      top: 55px;
+      bottom: 10px;
+    }
+
+    &_line {
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      background: #e9ecf3;
+      -webkit-transition: top 0.3s;
+      -moz-transition: top 0.3s;
+      -ms-transition: top 0.3s;
+      -o-transition: top 0.3s;
+      transition: top 0.3s cubic-bezier(0, 0.85, 0.56, 1.04), bottom 0.2s;
+    }
+  }
+
+  &_icon {
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 5px;
+
+    &__first {
+      background-position: 0 0;
+    }
+
+    &__second {
+      background-position: -90px 0;
+    }
+
+    &__third {
+      background-position: -180px 0;
+    }
+
+    &__fifth {
+      background-position: -270px 0;
+    }
+  }
+}
+
+.b-services {
+  &_item {
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 248px;
+
+    p {
+      margin: 10px 0;
+    }
+
+    div {
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 20px;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}
 
 
 
