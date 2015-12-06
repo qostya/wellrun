@@ -13,7 +13,13 @@
                     url: '?index',
                     views: {
                         footer: {
-                            templateUrl: 'templates/footer.html'
+                            templateUrl: 'templates/footer.html',
+                            controller: function () {
+                                var targetYear = document.getElementById('js-footer-year'),
+                                    currYear = new Date().getFullYear();
+
+                                targetYear.innerText = currYear;
+                            }
                         },
                         header: {
                             templateUrl: 'templates/header.html',
@@ -91,7 +97,8 @@
                                         minSlides: 2,
                                         maxSlides: 6,
                                         slideWidth: 190,
-                                        moveSlides: 2
+                                        moveSlides: 1,
+                                        speed: 300
                                     });
                                 }());
 

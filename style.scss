@@ -1,17 +1,14 @@
-
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background: #e9ecf3;
+  color: #3d4045;
+}
 
 body, ul, li, ol, p, img {
   padding: 0;
   margin: 0;
   border: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 150px;
-  font-size: 14px;
-  background: #e9ecf3;
-  color: #3d4045;
 }
 
 input {
@@ -130,8 +127,14 @@ a {
 
       a {
         padding: 15px 25px;
+        -webkit-transition: background 0.2s;
+        -moz-transition: background 0.2s;
+        -ms-transition: background 0.2s;
+        -o-transition: background 0.2s;
+        transition: background 0.2s;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: #5d6066;
           color: #fff;
         }
@@ -322,6 +325,10 @@ a {
       h3 {
         font-size: 18px;
         margin-top: 0;
+
+        a {
+          color: #3d4045;
+        }
       }
     }
 
@@ -675,10 +682,24 @@ a {
 }
 
 .b-main-clients {
+  li,
+  .bx-controls-direction a {
+    opacity: 0.5;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   .bx-wrapper {
     border: none;
     box-shadow: none;
+    background: none;
 
     .bx-controls-direction {
       a {
@@ -710,8 +731,109 @@ a {
   }
 }
 
+.b-footer {
+  color: #fff;
+  background-color: #3d4045;
+  padding: 20px 0 25px;
 
+  &_studio {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAYCAYAAABqWKS5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA1ZJREFUeNrMmH1ozlEUx/cMM0y2/0QIM9bGPwwlFIkIf3hZjMxfXstreUkYebbavDbK29aEhJAx1GiNZWPSpJk0fyh5a8JYNma+p75P3W73/J7n2fbUTn32e373/n73nnvuueec33yN26MiJbHgDDgInmsPxWW3tXuC7lGRk30gA4wA08Cvzp4gOkKKzwdb+Xs8yIvEJJFQfjA4AXxG22qwvKsr3w2cBAMcfcdAaldWfhuYpfTFg0LQp7MmkwPbFzSDlg6ONRnsCfLMOJAL1nZkop87fKJ3L/kzFeSDcvAYVIE60BTGeAkMizEhPLsGPAIXw1A2llFrApgIpoMsUf4BaOSBEv6Cd1xEGTgVwvhHQVIYi81n7H8VRGkJtTMZsYYaxvkAiqNp4SzLlYaBJTx8y4IostIjklwD35WdKpCt91B8Bi7nOfZIa1f9SG4NgQN7nZZ2SQ7or/SlMIO6ZD9YAJZyZ22R7fcrisfhclgZtx6cM6NNK5V0yUClLxAWExx9u8Bu/i4Bi5Qd2AhFXdFpJw3jkjxY/YcdKotBhfLCCjDbamtTUv4WcMBquwcWgq9Wu0S5b5bV03DZpOhRF7C6rbxYP9vDt2Ub+xn3/2ihZmMx68Eh5f1SupG5gFxYsdJQvAfnifWwepOWpEoYMl2SRHcw5Rm4wN+rwPEgh7uMdY+cgVqHO64Dk5R3a+3w6nOUxOKDd5QBWpgXKo02iUxjwZUwQuUUjlUZKIlh9URcnjITuyQTzxYFKw/EP+8rA8SwRjG39a2iuDyzFyQ7+sotA0QxammKvwCXQqlt2hjCtK+ENKPc1UR8t4jlgsT6xCDJSHLFPI9HcmD15lALM8m6dz0GywS9PRSXAmwx70eBm8yQmnglQjlXV8OtKrMZgWxpYH3epBR6Z/kFZUoyFzBImWsz3c+pB6z+J1zlH4LbVtsnRotSJWkVeJQKqRxviOM7toaB4rXVJefiRnvreT8LNZH39MsKZZzTDsUvg8/G/WjugGsBb3CZA15aVm9tr/JV9P0vYC54okSVQhZophwB6Twfv432MQzFwx0LqOc8spBqcMtLOV8I//pIoS/XKIfTz48L82NGUvgG4z6DmTdQGfZkTE+Hwh8d0UeiUzz6qr0U+y/AAHuX1URTogW0AAAAAElFTkSuQmCC) no-repeat left center;
+    padding-left: 60px;
+    min-height: 40px;
+    font-size: 11px;
+    color: #fff !important;
+    display: block;
+    padding-top: 5px;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    margin-top: 30px;
+    float: right;
+    margin-right: 20px;
 
+    span {
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &_social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31px;
+
+    .icon-social {
+      width: 31px;
+      height: 30px;
+      border: 2px solid #d7d8d9;
+      display: block;
+      margin-bottom: 3px;
+      -webkit-transition: background 0.2s;
+      -moz-transition: background 0.2s;
+      -ms-transition: background 0.2s;
+      -o-transition: background 0.2s;
+      transition: background 0.1s;
+      background-position-x: 0;
+
+      &:hover {
+        background-position-x: -27px;
+        background-color: #d7d8d9;
+      }
+    }
+
+    &__fb {
+      background-position-y: 0;
+    }
+
+    &__ig {
+      background-position-y: -26px;
+    }
+
+    &__vk {
+      background-position-y: -52px
+
+    }
+  }
+
+  &_normal {
+    position: relative;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      font-weight: 300;
+      margin-top: 10px;
+    }
+  }
+
+  &_copyrights {
+    h3 {
+      font-size: 22px;
+      font-weight: 300;
+      margin: 0;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+
+    small {
+      font-size: 11px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+}
 
 
 
