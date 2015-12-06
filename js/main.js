@@ -31,7 +31,7 @@
                                         parent.removeClass('b-header_search__active');
                                         target.animate({
                                             width: '0'
-                                        }, 200, function () {
+                                        }, 100, function () {
                                             target.css('display', 'none');
                                         });
                                     } else {
@@ -40,7 +40,7 @@
                                         target.css('display', 'block')
                                             .animate({
                                                 width: '164px'
-                                            }, 200);
+                                            }, 100);
                                     }
 
                                     return false;
@@ -80,6 +80,45 @@
                                     prevSelector: $('.b-main-slider_pager_arrow-left'),
                                     speed: 400
                                 });
+
+
+
+                                (function () {
+                                    $('.icon-star-set').each(function (id, item) {
+                                        item.dataset.starscount = $(item).children('.icon-star__gold').length;
+                                    }).click(function (ev) {
+                                        var $this = $(ev.target);
+                                        if ($this.hasClass('icon-star')) {
+                                            $this.parent().data('starscount', $this.index() + 1);
+                                        }
+
+                                        // here must be ajax
+                                        return false;
+                                    });
+
+                                    $('.icon-star').hover(function () {
+                                        var $this = $(this);
+                                        $this.addClass('icon-star__gold')
+                                            .prevAll()
+                                            .addClass('icon-star__gold');
+                                        $this.nextAll()
+                                            .removeClass('icon-star__gold');
+                                    }, function () {
+                                        var $this = $(this),
+                                            $this_parent = $this.parent(),
+                                            $this_parent_children = $this_parent.children();
+                                        for (var i = 0, l = +$this_parent.data('starscount'); 5 > i; i++) {
+                                            if (i < l) {
+                                                $this_parent_children.eq(i).addClass('icon-star__gold');
+                                            } else {
+                                                $this_parent_children.eq(i).removeClass('icon-star__gold');
+                                            }
+                                        }
+                                    });
+                                }());
+
+
+
                             }
                         }
                     }
