@@ -180,7 +180,7 @@ a {
     -moz-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
     -ms-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
     -o-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-    transition: background 0.1s linear, color 0.1s linear, border-color 0.1s linear;
+    transition: background 0.2s cubic-bezier(1,-0.05, 0, 1.06), color 0.2s, border-color 0.2s;
     font-weight: 400;
     text-transform: uppercase;
 
@@ -439,6 +439,7 @@ a {
 
 .b-main-services {
   text-align: center;
+  cursor: default;
 
   &_item {
     position: relative;
@@ -529,10 +530,16 @@ a {
 
   li {
     list-style-type: none;
+    padding-bottom: 20px;
+  }
+
+  .bx-wrapper {
+    border: none;
+    box-shadow: none;
   }
   
   h5 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 600;
     color: #d6282d;
   }
@@ -549,9 +556,15 @@ a {
       float: left;
       width: 85px;
 
-      img  {
-        min-width: 100%;
+      a {
+        display: block;
+        height: 130px;
         margin-bottom: 10px;
+      }
+
+      img  {
+        max-width: 100%;
+        max-height: 130px;
       }
     }
 
@@ -601,6 +614,8 @@ a {
     &_title {
       font-size: 18px;
       font-weight: 600;
+      height: 38px;
+      overflow: hidden;
 
       a {
         color: #3d4045;
@@ -627,6 +642,11 @@ a {
     }
 
     &_titles {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
       li {
         list-style-type: none;
         display: inline-block;
@@ -638,7 +658,14 @@ a {
         font-size: 30px;
         border: 2px solid transparent;
         color: #3d4045;
+        cursor: pointer;
+        -webkit-transition: border 0.2s;
+        -moz-transition: border 0.2s;
+        -ms-transition: border 0.2s;
+        -o-transition: border 0.2s;
+        transition: border 0.2s;
 
+        &:hover,
         &.__active {
           border-color: #3d4045
         }

@@ -177,9 +177,9 @@
                 </div>
                 <div class="col-md-8">
                     <ul class="b-main-carousel_head_titles">
-                        <li class="__active">Масла</li>
-                        <li>Аккумуляторы</li>
-                        <li>Автотовары</li>
+                        <li class="js-slide-to __active" data-slide-to="0">Масла</li>
+                        <li class="js-slide-to" data-slide-to="1">Аккумуляторы</li>
+                        <li class="js-slide-to" data-slide-to="2">Автотовары</li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -190,108 +190,310 @@
     </div>
     <div class="b-main-carousel_body">
         <div class="container">
-            <ul class="row">
-                <li>
-                    <div class="col-md-4">
-                        <h4 class="b-main-carousel_body_title">
-                            <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
-                        </h4>
-                        <table>
-                            <tr>
-                                <td class="b-main-carousel_body_left">
-                                    <a href="#">
-                                        <img src="images/static/carousel_1.jpg" alt=""/>
-                                    </a>
+            <div class="row">
+                <ul class="b-main-carousel_target">
+                    <li>
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
 
-                                    <div class="icon-star-set" data-starscount="2">
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star"></div>
-                                        <div class="icon-star"></div>
-                                    </div>
-                                </td>
-                                <td class="b-main-carousel_body_right">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
-                                    </p>
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
 
-                                    <div class="b-main-carousel_body_right_bottom">
-                                        <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
-                                        <strong>700 <small>руб</small></strong>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div class="col-md-4">
-                        <h4 class="b-main-carousel_body_title">
-                            <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
-                        </h4>
-                        <table>
-                            <tr>
-                                <td class="b-main-carousel_body_left">
-                                    <a href="#">
-                                        <img src="images/static/carousel_1.jpg" alt=""/>
-                                    </a>
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
 
-                                    <div class="icon-star-set" data-starscount="2">
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star"></div>
-                                        <div class="icon-star"></div>
-                                    </div>
-                                </td>
-                                <td class="b-main-carousel_body_right">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
-                                    </p>
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
 
-                                    <div class="b-main-carousel_body_right_bottom">
-                                        <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
-                                        <strong>700 <small>руб</small></strong>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div class="col-md-4">
-                        <h4 class="b-main-carousel_body_title">
-                            <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
-                        </h4>
-                        <table>
-                            <tr>
-                                <td class="b-main-carousel_body_left">
-                                    <a href="#">
-                                        <img src="images/static/carousel_1.jpg" alt=""/>
-                                    </a>
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
 
-                                    <div class="icon-star-set" data-starscount="2">
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star icon-star__gold"></div>
-                                        <div class="icon-star"></div>
-                                        <div class="icon-star"></div>
-                                    </div>
-                                </td>
-                                <td class="b-main-carousel_body_right">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
-                                    </p>
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
 
-                                    <div class="b-main-carousel_body_right_bottom">
-                                        <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
-                                        <strong>700 <small>руб</small></strong>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </li>
-            </ul>
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4 class="b-main-carousel_body_title">
+                                <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                            </h4>
+                            <table>
+                                <tr>
+                                    <td class="b-main-carousel_body_left">
+                                        <a href="#">
+                                            <img src="images/static/carousel_1.jpg" alt=""/>
+                                        </a>
+
+                                        <div class="icon-star-set" data-starscount="2">
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star icon-star__gold"></div>
+                                            <div class="icon-star"></div>
+                                            <div class="icon-star"></div>
+                                        </div>
+                                    </td>
+                                    <td class="b-main-carousel_body_right">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                        </p>
+
+                                        <div class="b-main-carousel_body_right_bottom">
+                                            <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                            <strong>700 <small>руб</small></strong>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

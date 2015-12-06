@@ -118,7 +118,7 @@ a.css-btn-empty {
   -moz-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
   -ms-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
   -o-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-  transition: background 0.1s linear, color 0.1s linear, border-color 0.1s linear;
+  transition: background 0.2s cubic-bezier(1, -0.05, 0, 1.06), color 0.2s, border-color 0.2s;
   font-weight: 400;
   text-transform: uppercase; }
   a.css-btn-empty__black {
@@ -296,7 +296,8 @@ a.css-link-with-icon {
           z-index: 2; }
 
 .b-main-services {
-  text-align: center; }
+  text-align: center;
+  cursor: default; }
   .b-main-services_item {
     position: relative;
     height: 155px;
@@ -355,9 +356,13 @@ a.css-link-with-icon {
 .b-main-carousel {
   margin-top: 50px; }
   .b-main-carousel li {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-bottom: 20px; }
+  .b-main-carousel .bx-wrapper {
+    border: none;
+    box-shadow: none; }
   .b-main-carousel h5 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 600;
     color: #d6282d; }
   .b-main-carousel table {
@@ -368,9 +373,13 @@ a.css-link-with-icon {
     .b-main-carousel_body_left {
       float: left;
       width: 85px; }
-      .b-main-carousel_body_left img {
-        min-width: 100%;
+      .b-main-carousel_body_left a {
+        display: block;
+        height: 130px;
         margin-bottom: 10px; }
+      .b-main-carousel_body_left img {
+        max-width: 100%;
+        max-height: 130px; }
     .b-main-carousel_body_right {
       padding-left: 30px;
       vertical-align: top;
@@ -404,7 +413,9 @@ a.css-link-with-icon {
           font-size: 18px; }
     .b-main-carousel_body_title {
       font-size: 18px;
-      font-weight: 600; }
+      font-weight: 600;
+      height: 38px;
+      overflow: hidden; }
       .b-main-carousel_body_title a {
         color: #3d4045; }
         .b-main-carousel_body_title a:hover {
@@ -418,18 +429,29 @@ a.css-link-with-icon {
       text-decoration: underline; }
       .b-main-carousel_head_all-link:hover {
         text-decoration: none; }
-    .b-main-carousel_head_titles li {
-      list-style-type: none;
-      display: inline-block;
-      margin-left: 10px;
-      padding: 0 35px 2px;
-      -webkit-border-radius: 28px;
-      -moz-border-radius: 28px;
-      border-radius: 28px;
-      font-size: 30px;
-      border: 2px solid transparent;
-      color: #3d4045; }
-      .b-main-carousel_head_titles li.__active {
-        border-color: #3d4045; }
+    .b-main-carousel_head_titles {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .b-main-carousel_head_titles li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0 35px 2px;
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        font-size: 30px;
+        border: 2px solid transparent;
+        color: #3d4045;
+        cursor: pointer;
+        -webkit-transition: border 0.2s;
+        -moz-transition: border 0.2s;
+        -ms-transition: border 0.2s;
+        -o-transition: border 0.2s;
+        transition: border 0.2s; }
+        .b-main-carousel_head_titles li:hover, .b-main-carousel_head_titles li.__active {
+          border-color: #3d4045; }
 
 /*# sourceMappingURL=style.css.map */
