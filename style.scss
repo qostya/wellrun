@@ -176,11 +176,11 @@ a {
     display: inline-block;
     border: 1px solid #cb3034;
     color: #cb3034;
-    -webkit-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-    -moz-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-    -ms-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-    -o-transition: background 0.2s linear, color 0.2s linear, border-color 0.2s linear;
-    transition: background 0.2s cubic-bezier(1,-0.05, 0, 1.06), color 0.2s, border-color 0.2s;
+    -webkit-transition: background 0.2s cubic-bezier(0, 0.47, 0.13, 1.07), color 0.2s, border-color 0.2s;
+    -moz-transition: background 0.2s cubic-bezier(0, 0.47, 0.13, 1.07), color 0.2s, border-color 0.2s;
+    -ms-transition: background 0.2s cubic-bezier(0, 0.47, 0.13, 1.07), color 0.2s, border-color 0.2s;
+    -o-transition: background 0.2s cubic-bezier(0, 0.47, 0.13, 1.07), color 0.2s, border-color 0.2s;
+    transition: background 0.2s cubic-bezier(0, 0.47, 0.13, 1.07), color 0.2s, border-color 0.2s;
     font-weight: 400;
     text-transform: uppercase;
 
@@ -539,7 +539,7 @@ a {
   }
   
   h5 {
-    margin-top: 15px;
+    margin-top: 18px;
     font-weight: 600;
     color: #d6282d;
   }
@@ -633,7 +633,7 @@ a {
     &_all-link {
       display: inline-block;
       float: right;
-      padding: 15px 0 0;
+      margin: 18px 0 0;
       text-decoration: underline;
 
       &:hover {
@@ -651,7 +651,7 @@ a {
         list-style-type: none;
         display: inline-block;
         margin-left: 10px;
-        padding: 0 35px 2px;
+        padding: 0 35px 1px;
         -webkit-border-radius: 28px;
         -moz-border-radius: 28px;
         border-radius: 28px;
@@ -674,7 +674,41 @@ a {
   }
 }
 
+.b-main-clients {
 
+  .bx-wrapper {
+    border: none;
+    box-shadow: none;
+
+    .bx-controls-direction {
+      a {
+        width: 31px;
+        height: 30px;
+      }
+
+      .bx-next {
+        background-position: -31px 0;
+        right: 15px;
+      }
+
+      .bx-prev {
+        left: 15px;
+      }
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 45px 0;
+  }
+
+  li {
+    float: left;
+    width: 191px;
+  }
+}
 
 
 

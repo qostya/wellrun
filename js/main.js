@@ -76,11 +76,22 @@
 
                                     $('.b-main-slider_wrapper').bxSlider({
                                         prevText: '',
+                                        infiniteLoop: false,
                                         nextText: '',
                                         pagerCustom: pagerWrapper,
                                         nextSelector: $('.b-main-slider_pager_arrow-right'),
                                         prevSelector: $('.b-main-slider_pager_arrow-left'),
                                         speed: 400
+                                    });
+                                }());
+
+                                (function () {
+                                    $('.b-main-clients_holder > ul').bxSlider({
+                                        pager: false,
+                                        minSlides: 2,
+                                        maxSlides: 6,
+                                        slideWidth: 190,
+                                        moveSlides: 2
                                     });
                                 }());
 
