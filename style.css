@@ -425,7 +425,8 @@ a.css-link-with-icon {
       .b-main-carousel_body_title a {
         color: #3d4045; }
         .b-main-carousel_body_title a:hover {
-          color: #d6282d; }
+          color: #d6282d;
+          text-decoration: none; }
   .b-main-carousel_head {
     margin-bottom: 50px; }
     .b-main-carousel_head_all-link {
@@ -592,7 +593,9 @@ a.css-link-with-icon {
 
 .b-product-block {
   background: #fff;
-  padding: 40px 0 50px; }
+  padding: 40px 0 0; }
+  .b-product-block_line > div {
+    padding-bottom: 50px; }
 
 .css_mb40 {
   margin-bottom: 40px; }
@@ -640,5 +643,65 @@ a.css-link-with-icon {
         border-color: #d6282d;
         color: #d6282d;
         text-decoration: none; }
+
+.b-catalog-additional {
+  background-color: #fff;
+  padding-top: 30px; }
+  .b-catalog-additional_with-line > div {
+    border-bottom: 7px solid #aeb3bd;
+    -webkit-transition: border-color 0.2s;
+    -moz-transition: border-color 0.2s;
+    -ms-transition: border-color 0.2s;
+    -o-transition: border-color 0.2s;
+    transition: border-color 0.2s; }
+    .b-catalog-additional_with-line > div:hover {
+      border-bottom-color: #3d4045; }
+
+.b-breadcrumbs {
+  color: #3d4045;
+  font-size: 13px;
+  font-weight: bold; }
+
+.b-pagination {
+  text-align: center;
+  padding: 40px 0;
+  line-height: 0; }
+  .b-pagination ul {
+    display: inline-block; }
+  .b-pagination li {
+    display: inline-block; }
+    .b-pagination li._active a {
+      background-color: #fff;
+      color: #3d4045; }
+  .b-pagination a {
+    display: block;
+    line-height: 33px;
+    height: 31px;
+    width: 31px;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s; }
+    .b-pagination a:hover {
+      background-color: #3d4045;
+      color: #fff;
+      text-decoration: none; }
+  .b-pagination_arrow {
+    background-color: #aeb3bd; }
+    .b-pagination_arrow__left a {
+      -ms-background-position-x: -31px;
+      background-position-x: -31px; }
+      .b-pagination_arrow__left a:hover {
+        -ms-background-position-x: 0;
+        background-position-x: 0; }
+    .b-pagination_arrow__right a {
+      -ms-background-position-y: -31px;
+      background-position-y: -31px; }
+      .b-pagination_arrow__right a:hover {
+        -ms-background-position-x: -31px;
+        background-position-x: -31px; }
 
 /*# sourceMappingURL=style.css.map */

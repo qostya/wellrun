@@ -628,6 +628,7 @@ a {
 
         &:hover {
           color: #d6282d;
+          text-decoration: none;
         }
       }
     }
@@ -875,8 +876,13 @@ a {
 
 .b-product-block {
   background: #fff;
-  padding: 40px 0 50px;
+  padding: 40px 0 0;
 
+  &_line {
+    & > div {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 .css {
@@ -958,6 +964,97 @@ a {
   }
 }
 
+.b-catalog-additional {
+  background-color: #fff;
+  padding-top: 30px;
 
+  &_with-line {
+    & > div {
+      border-bottom: 7px solid #aeb3bd;
+      -webkit-transition: border-color 0.2s;
+      -moz-transition: border-color 0.2s;
+      -ms-transition: border-color 0.2s;
+      -o-transition: border-color 0.2s;
+      transition: border-color 0.2s;
 
+      &:hover {
+        border-bottom-color: #3d4045;
+      }
+    }
+  }
+}
 
+.b-breadcrumbs {
+  color: #3d4045;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.b-pagination {
+  text-align: center;
+  padding: 40px 0;
+  line-height: 0;
+  
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+
+    &._active {
+      a {
+        background-color: #fff;
+        color: #3d4045;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    line-height: 33px;
+    height: 31px;
+    width: 31px;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+
+    &:hover {
+      background-color: #3d4045;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &_arrow {
+    background-color: #aeb3bd;
+
+    &__left {
+      a {
+        -ms-background-position-x: -31px;
+        background-position-x: -31px;
+
+        &:hover {
+          -ms-background-position-x: 0;
+          background-position-x: 0;
+        }
+      }
+    }
+
+    &__right {
+      a {
+        -ms-background-position-y: -31px;
+        background-position-y: -31px;
+
+        &:hover {
+          -ms-background-position-x: -31px;
+          background-position-x: -31px;
+        }
+      }
+    }
+  }
+}
