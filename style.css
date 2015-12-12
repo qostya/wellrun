@@ -12,6 +12,9 @@ body, ul, li, ol, p, img {
 input {
   font-family: "Roboto", sans-serif; }
 
+img {
+  pointer-events: none; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -680,11 +683,11 @@ a.css-link-with-icon {
     width: 31px;
     font-weight: 500;
     font-size: 16px;
-    -webkit-transition: background 0.2s;
-    -moz-transition: background 0.2s;
-    -ms-transition: background 0.2s;
-    -o-transition: background 0.2s;
-    transition: background 0.2s; }
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    -ms-transition: background 0.2s, color 0.2s;
+    -o-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s; }
     .b-pagination a:hover {
       background-color: #3d4045;
       color: #fff;
@@ -703,5 +706,30 @@ a.css-link-with-icon {
       .b-pagination_arrow__right a:hover {
         -ms-background-position-x: -31px;
         background-position-x: -31px; }
+
+.b-catalog-item {
+  background-color: #fff;
+  padding: 20px 0 30px; }
+  .b-catalog-item_stars {
+    width: 225px;
+    margin-top: 20px; }
+  .b-catalog-item_description_text {
+    margin-top: 10px;
+    font-size: 15px; }
+  .b-catalog-item_description_info {
+    display: inline-block; }
+    .b-catalog-item_description_info strong {
+      display: block;
+      padding: 5px 0;
+      border-top: 2px solid #d7dbe3; }
+      .b-catalog-item_description_info strong:first-child {
+        border-top: none;
+        padding-top: 0; }
+  .b-catalog-item_img img {
+    width: 225px; }
+  .b-catalog-item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

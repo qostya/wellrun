@@ -2,6 +2,40 @@
     "use strict";
     var myApp = angular.module('MyApp', ['ui.router']);
 
+    function setStarIcons(iconName) {
+        $('.' + iconName +'-set').each(function (id, item) {
+            item.dataset.starscount = $(item).children('.' + iconName +'__gold').length;
+        }).click(function (ev) {
+            var $this = $(ev.target);
+            if ($this.hasClass(iconName)) {
+                $this.parent().data('starscount', $this.index() + 1);
+            }
+
+            // here must be ajax
+            return false;
+        });
+
+        $('.' + iconName).hover(function () {
+            var $this = $(this);
+            $this.addClass(iconName + '__gold')
+                .prevAll()
+                .addClass(iconName + '__gold');
+            $this.nextAll()
+                .removeClass(iconName + '__gold');
+        }, function () {
+            var $this = $(this),
+                $this_parent = $this.parent(),
+                $this_parent_children = $this_parent.children();
+            for (var i = 0, l = +$this_parent.data('starscount'); 5 > i; i++) {
+                if (i < l) {
+                    $this_parent_children.eq(i).addClass(iconName + '__gold');
+                } else {
+                    $this_parent_children.eq(i).removeClass(iconName + '__gold');
+                }
+            }
+        });
+    }
+
     myApp.config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
 
@@ -141,44 +175,7 @@
                                     });
                                 }());
 
-
-
-                                (function () {
-                                    $('.icon-star-set').each(function (id, item) {
-                                        item.dataset.starscount = $(item).children('.icon-star__gold').length;
-                                    }).click(function (ev) {
-                                        var $this = $(ev.target);
-                                        if ($this.hasClass('icon-star')) {
-                                            $this.parent().data('starscount', $this.index() + 1);
-                                        }
-
-                                        // here must be ajax
-                                        return false;
-                                    });
-
-                                    $('.icon-star').hover(function () {
-                                        var $this = $(this);
-                                        $this.addClass('icon-star__gold')
-                                            .prevAll()
-                                            .addClass('icon-star__gold');
-                                        $this.nextAll()
-                                            .removeClass('icon-star__gold');
-                                    }, function () {
-                                        var $this = $(this),
-                                            $this_parent = $this.parent(),
-                                            $this_parent_children = $this_parent.children();
-                                        for (var i = 0, l = +$this_parent.data('starscount'); 5 > i; i++) {
-                                            if (i < l) {
-                                                $this_parent_children.eq(i).addClass('icon-star__gold');
-                                            } else {
-                                                $this_parent_children.eq(i).removeClass('icon-star__gold');
-                                            }
-                                        }
-                                    });
-                                }());
-
-
-
+                                setStarIcons('icon-star');
                             }
                         }
                     }
@@ -189,39 +186,7 @@
                         '': {
                             templateUrl: 'templates/catalog.html',
                             controller: function () {
-                                (function () {
-                                    $('.icon-star-set').each(function (id, item) {
-                                        item.dataset.starscount = $(item).children('.icon-star__gold').length;
-                                    }).click(function (ev) {
-                                        var $this = $(ev.target);
-                                        if ($this.hasClass('icon-star')) {
-                                            $this.parent().data('starscount', $this.index() + 1);
-                                        }
-
-                                        // here must be ajax
-                                        return false;
-                                    });
-
-                                    $('.icon-star').hover(function () {
-                                        var $this = $(this);
-                                        $this.addClass('icon-star__gold')
-                                            .prevAll()
-                                            .addClass('icon-star__gold');
-                                        $this.nextAll()
-                                            .removeClass('icon-star__gold');
-                                    }, function () {
-                                        var $this = $(this),
-                                            $this_parent = $this.parent(),
-                                            $this_parent_children = $this_parent.children();
-                                        for (var i = 0, l = +$this_parent.data('starscount'); 5 > i; i++) {
-                                            if (i < l) {
-                                                $this_parent_children.eq(i).addClass('icon-star__gold');
-                                            } else {
-                                                $this_parent_children.eq(i).removeClass('icon-star__gold');
-                                            }
-                                        }
-                                    });
-                                }());
+                                setStarIcons('icon-star');
                             }
                         }
                     }
@@ -230,9 +195,17 @@
                     url: '/cat-additional',
                     views: {
                         '': {
-                            templateUrl: 'templates/catalog_additional.html',
+                            templateUrl: 'templates/catalog_additional.html'
+                        }
+                    }
+                })
+                .state('index.catalog_item', {
+                    url: '/cat-item',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/catalog_item.html',
                             controller: function () {
-
+                                setStarIcons('icon-star-big');
                             }
                         }
                     }
