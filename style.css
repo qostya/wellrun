@@ -610,7 +610,7 @@ a.css-link-with-icon {
 .b-titles_line {
   text-align: justify;
   margin-top: 30px;
-  margin-bottom: -10px; }
+  margin-bottom: -20px; }
   .b-titles_line_left {
     text-align: left; }
   .b-titles_line_left .b-titles_line_item {
@@ -621,6 +621,7 @@ a.css-link-with-icon {
     width: 100%; }
   .b-titles_line_item {
     display: inline-block;
+    margin-bottom: 10px;
     padding: 5px 15px 3px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

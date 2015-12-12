@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c906f94-8dfb-4812-8a1c-80191229a403" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/catalog_item.html" afterPath="$PROJECT_DIR$/templates/catalog_item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css.map" afterPath="$PROJECT_DIR$/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.scss" afterPath="$PROJECT_DIR$/style.scss" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="catalog_item.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/catalog_item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.038462">
-              <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
+            <state vertical-scroll-proportion="-6.4615383">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -41,8 +40,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.728863">
-              <caret line="1142" column="23" selection-start-line="1142" selection-start-column="23" selection-end-line="1142" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.23323615">
+              <caret line="911" column="21" selection-start-line="911" selection-start-column="21" selection-end-line="911" selection-end-column="21" />
               <folding>
                 <element signature="e#4240#4873#1" expanded="true" />
               </folding>
@@ -757,16 +756,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalog_item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.038462">
-          <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
+        <state vertical-scroll-proportion="-6.4615383">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728863">
-          <caret line="1142" column="23" selection-start-line="1142" selection-start-column="23" selection-end-line="1142" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.23323615">
+          <caret line="911" column="21" selection-start-line="911" selection-start-column="21" selection-end-line="911" selection-end-column="21" />
           <folding>
             <element signature="e#4240#4873#1" expanded="true" />
           </folding>
