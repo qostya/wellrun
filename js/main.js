@@ -2,6 +2,21 @@
     "use strict";
     var myApp = angular.module('MyApp', ['ui.router']);
 
+    function showChildByHoveredParent(prntClass, chldClass) {
+        var $prntClass = $('.' + prntClass),
+            $chldClass = $prntClass.find('.' + chldClass),
+            sett;
+
+        $prntClass.hover(function () {
+            clearTimeout(sett);
+            $chldClass.slideDown(200);
+        }, function () {
+            sett = setTimeout(function () {
+                $chldClass.slideUp(200);
+            }, 1000);
+        })
+    }
+
     function setStarIcons(iconName) {
         $('.' + iconName +'-set').each(function (id, item) {
             item.dataset.starscount = $(item).children('.' + iconName +'__gold').length;
@@ -206,6 +221,16 @@
                             templateUrl: 'templates/catalog_item.html',
                             controller: function () {
                                 setStarIcons('icon-star-big');
+                                showChildByHoveredParent('js-hovered-parent', 'js-hovered-parent_dropdown');
+
+                                $('.js-change-count').click(function() {
+                                    var target_input = $(this).parents('.js-change-count_parent').find('input');
+                                    if ($(this).data('changeCount') === 'up') {
+                                        target_input.val(+target_input.val() + 1);
+                                    } else if (target_input.val() > 0) {
+                                        target_input.val(+target_input.val() - 1);
+                                    }
+                                });
                             }
                         }
                     }
