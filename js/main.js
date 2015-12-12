@@ -234,6 +234,14 @@
                             }
                         }
                     }
+                })
+                .state('index.news', {
+                    url: '/news',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/news_list.html'
+                        }
+                    }
                 });
         }
     ]);
