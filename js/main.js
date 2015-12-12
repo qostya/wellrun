@@ -225,6 +225,17 @@
                             }
                         }
                     }
+                })
+                .state('index.catalog_additional', {
+                    url: '/cat-additional',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/catalog_additional.html',
+                            controller: function () {
+
+                            }
+                        }
+                    }
                 });
         }
     ]);

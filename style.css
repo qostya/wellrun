@@ -601,4 +601,44 @@ a.css-link-with-icon {
 .css_mb60 {
   margin-bottom: 60px; }
 
+.b-titles_line {
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: -10px; }
+  .b-titles_line_left {
+    text-align: left; }
+  .b-titles_line_left .b-titles_line_item {
+    margin-right: 20px; }
+  .b-titles_line:after {
+    content: ' ';
+    display: inline-block;
+    width: 100%; }
+  .b-titles_line_item {
+    display: inline-block;
+    padding: 5px 15px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    -webkit-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    -ms-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    -o-transition: background 0.2s, border-color 0.2s, color 0.2s;
+    transition: background 0.2s, border-color 0.2s, color 0.2s; }
+    .b-titles_line_item__filled {
+      background-color: #3d4045;
+      color: #fff; }
+      .b-titles_line_item__filled:hover, .b-titles_line_item__filled:focus, .b-titles_line_item__filled._active {
+        background-color: #d6282d;
+        color: #fff;
+        text-decoration: none; }
+    .b-titles_line_item__empty {
+      border: 2px solid #3d4045;
+      color: #3d4045; }
+      .b-titles_line_item__empty:hover, .b-titles_line_item__empty:focus, .b-titles_line_item__empty._active {
+        border-color: #d6282d;
+        color: #d6282d;
+        text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
