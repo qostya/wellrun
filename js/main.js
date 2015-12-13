@@ -266,6 +266,32 @@
                             templateUrl: 'templates/reviews.html'
                         }
                     }
+                })
+                .state('index.vacancies', {
+                    url: '/vacancies',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/vacancies.html',
+                            controller: function () {
+                                $('.js-show-content').click(
+                                    function (ev) {
+                                        var $this = $(this),
+                                            $target = $this.siblings('.js-show-content-target'),
+                                            $parent = $this.parent();
+                                        if (!$parent.hasClass('_active')) {
+                                            $target.slideDown('fast');
+                                        } else {
+                                            $target.slideUp('fast');
+                                        }
+
+                                        $parent.toggleClass('_active');
+
+                                        return false;
+                                    }
+                                );
+                            }
+                        }
+                    }
                 });
         }
     ]);

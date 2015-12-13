@@ -1629,3 +1629,116 @@ a {
     }
   }
 }
+
+.b-vacancies {
+  padding: 20px 0 60px;
+  background-color: #fff;
+  font-size: 15px;
+
+  &_other {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+
+    a {
+      margin-top: 15px;
+    }
+  }
+
+  &_block {
+    padding-left: 34px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &._active {
+      h5 {
+        a {
+          color: #d6282d;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &._active &_button {
+      &:before {
+        content: '-';
+      }
+    }
+
+    &._active &_content {
+      display: block;
+    }
+
+    &_button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 21px;
+      border: 1px solid;
+      line-height: 19px;
+      font-size: 16px;
+      text-indent: 1px;
+      font-weight: bold;
+      text-align: center;
+
+      &:before {
+        content: '+'
+      }
+    }
+
+    &_content {
+      border: 1px solid #c7c7c7;
+      padding: 15px 25px;
+      display: none;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h5 {
+    margin: 0 0 10px;
+    padding-top: 2px;
+
+    a {
+      font-weight: bold;
+      font-size: 15px;
+
+      &:focus {
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

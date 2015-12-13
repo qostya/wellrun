@@ -1084,4 +1084,55 @@ a.css-link-with-icon {
       display: inline-block;
       vertical-align: middle; }
 
+.b-vacancies {
+  padding: 20px 0 60px;
+  background-color: #fff;
+  font-size: 15px; }
+  .b-vacancies_other {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px; }
+    .b-vacancies_other a {
+      margin-top: 15px; }
+  .b-vacancies_block {
+    padding-left: 34px;
+    position: relative;
+    margin-bottom: 15px; }
+    .b-vacancies_block._active h5 a {
+      color: #d6282d;
+      text-decoration: underline; }
+    .b-vacancies_block._active .b-vacancies_block_button:before {
+      content: '-'; }
+    .b-vacancies_block._active .b-vacancies_block_content {
+      display: block; }
+    .b-vacancies_block_button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 21px;
+      border: 1px solid;
+      line-height: 19px;
+      font-size: 16px;
+      text-indent: 1px;
+      font-weight: bold;
+      text-align: center; }
+      .b-vacancies_block_button:before {
+        content: "+"; }
+    .b-vacancies_block_content {
+      border: 1px solid #c7c7c7;
+      padding: 15px 25px;
+      display: none; }
+  .b-vacancies h3 {
+    font-size: 20px;
+    font-weight: bold; }
+  .b-vacancies h5 {
+    margin: 0 0 10px;
+    padding-top: 2px; }
+    .b-vacancies h5 a {
+      font-weight: bold;
+      font-size: 15px; }
+      .b-vacancies h5 a:focus {
+        text-decoration: inherit; }
+
 /*# sourceMappingURL=style.css.map */
