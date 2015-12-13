@@ -258,6 +258,14 @@
                             templateUrl: 'templates/contacts.html'
                         }
                     }
+                })
+                .state('index.reviews', {
+                    url: '/reviews',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/reviews.html'
+                        }
+                    }
                 });
         }
     ]);

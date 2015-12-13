@@ -1004,4 +1004,84 @@ a.css-link-with-icon {
     .b-address-block h4 span {
       vertical-align: middle; }
 
+.b-reviews {
+  padding: 0 0 60px; }
+  .b-reviews h3 {
+    color: #5a5a5a;
+    font-size: 18px;
+    margin-bottom: 0; }
+    .b-reviews h3 span {
+      font-size: 14px;
+      font-weight: 500; }
+  .b-reviews .b-breadcrumbs {
+    padding-top: 20px;
+    background-color: #fff; }
+  .b-reviews_item {
+    padding-top: 40px; }
+    .b-reviews_item_video {
+      margin: 15px 0;
+      display: block;
+      text-decoration: none; }
+      .b-reviews_item_video:hover i {
+        background-color: #d6282d; }
+      .b-reviews_item_video span {
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 15px; }
+      .b-reviews_item_video i {
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: #3d4045;
+        vertical-align: middle;
+        -webkit-transition: background 0.2s;
+        -moz-transition: background 0.2s;
+        -ms-transition: background 0.2s;
+        -o-transition: background 0.2s;
+        transition: background 0.2s; }
+        .b-reviews_item_video i:after {
+          content: '';
+          position: absolute;
+          display: block;
+          border: 12px solid transparent;
+          border-top-width: 7px;
+          border-bottom-width: 7px;
+          border-left-color: #fff;
+          top: 13px;
+          left: 16px; }
+    .b-reviews_item_line {
+      width: 100%;
+      height: 7px;
+      background-color: #aeb3bd;
+      margin-top: 40px;
+      -webkit-transition: background 0.2s;
+      -moz-transition: background 0.2s;
+      -ms-transition: background 0.2s;
+      -o-transition: background 0.2s;
+      transition: background 0.2s; }
+    .b-reviews_item:hover .b-reviews_item_line {
+      background-color: #3d4045; }
+    .b-reviews_item_first {
+      background-color: #fff; }
+  .b-reviews_add {
+    font-size: 20px;
+    white-space: nowrap;
+    display: inline-block; }
+    .b-reviews_add:hover span {
+      border-bottom-color: transparent; }
+    .b-reviews_add span {
+      vertical-align: middle;
+      margin-left: 20px;
+      border-bottom: 1px solid;
+      display: inline-block;
+      height: 25px;
+      text-decoration: none !important; }
+    .b-reviews_add i {
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      vertical-align: middle; }
+
 /*# sourceMappingURL=style.css.map */
