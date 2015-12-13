@@ -250,6 +250,14 @@
                             templateUrl: 'templates/news_item.html'
                         }
                     }
+                })
+                .state('index.contacts', {
+                    url: '/contacts',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/contacts.html'
+                        }
+                    }
                 });
         }
     ]);

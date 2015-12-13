@@ -1421,21 +1421,24 @@ a {
     max-width: 90%;
   }
 
-  [align="left"] {
+  img[align="left"],
+  iframe[align="left"] {
     display: block;
     float: left;
     margin-right: 15px;
     margin-bottom: 10px;
   }
 
-  [align="right"] {
+  img[align="right"],
+  iframe[align="right"]{
     display: block;
     float: right;
     margin-left: 15px;
     margin-bottom: 10px;
   }
 
-  [align="center"] {
+  img[align="center"],
+  iframe[align="center"] {
     display: block;
     margin: 25px auto;
   }
@@ -1443,5 +1446,69 @@ a {
   iframe {
     width: 90%;
     max-width: 700px;
+  }
+}
+
+
+.b-contacts {
+  padding: 20px 0 60px;
+  background-color: #fff;
+  margin-bottom: 30px;
+
+  &_map {
+    margin-top: 50px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}
+
+.b-address-block {
+  margin-top: 20px;
+  width: 100%;
+
+  img {
+    margin-left: 5px;
+  }
+
+  .icon-online-black {
+    display: inline-block;
+    margin: 0 20px;
+    width: 27px;
+    height: 29px;
+  }
+
+  &_left {
+    padding-right: 35px;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .icon-wr {
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: -2px;
+
+    span {
+      vertical-align: middle;
+    }
   }
 }
