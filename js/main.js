@@ -104,7 +104,13 @@
                                 });
 
                                 $('.js-open-modal-callback').click(function () {
-                                    $('.b-modal-callback, .b-modals_bg').addClass('b-modal__active');
+                                    $('.b-modal-callback, .b-modals').addClass('b-modal__active');
+                                    $('body').addClass('overflow-hidden');
+                                    return false;
+                                });
+
+                                $('.js-open-modal-online').click(function () {
+                                    $('.b-modal-online, .b-modals').addClass('b-modal__active');
                                     $('body').addClass('overflow-hidden');
                                     return false;
                                 });
