@@ -1135,4 +1135,45 @@ a.css-link-with-icon {
       .b-vacancies h5 a:focus {
         text-decoration: inherit; }
 
+.b-services-page {
+  padding: 20px 0 60px;
+  background-color: #fff; }
+  .b-services-page_wrapper {
+    margin-bottom: 20px; }
+  .b-services-page_item {
+    font-size: 15px;
+    margin-bottom: 3px; }
+    .b-services-page_item_body {
+      padding: 10px 0 15px 39px;
+      display: none; }
+      .b-services-page_item_body a {
+        color: #d6282d; }
+    .b-services-page_item_head {
+      line-height: 47px;
+      height: 47px;
+      background-color: #e9ecf3;
+      padding-left: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      -webkit-transition: background 0.2s, color 0.2s;
+      -moz-transition: background 0.2s, color 0.2s;
+      -ms-transition: background 0.2s, color 0.2s;
+      -o-transition: background 0.2s, color 0.2s;
+      transition: background 0.2s, color 0.2s; }
+      .b-services-page_item_head:hover {
+        background-color: #3d4045;
+        color: #fff; }
+        .b-services-page_item_head:hover i {
+          border-color: #fff; }
+      .b-services-page_item_head i {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border: 3px solid;
+        margin-right: 15px; }
+  .b-services-page h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0; }
+
 /*# sourceMappingURL=style.css.map */

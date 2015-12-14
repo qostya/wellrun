@@ -51,6 +51,25 @@
         });
     }
 
+    function showSiblingByClick() {
+        $('.js-show-content').click(
+            function (ev) {
+                var $this = $(this),
+                    $target = $this.siblings('.js-show-content-target'),
+                    $parent = $this.parent();
+                if (!$parent.hasClass('_active')) {
+                    $target.slideDown('fast');
+                } else {
+                    $target.slideUp('fast');
+                }
+
+                $parent.toggleClass('_active');
+
+                return false;
+            }
+        );
+    }
+
     myApp.config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
 
@@ -267,28 +286,24 @@
                         }
                     }
                 })
+                .state('index.services', {
+                    url: '/services',
+                    views: {
+                        '': {
+                            templateUrl: 'templates/services.html',
+                            controller: function () {
+                                showSiblingByClick();
+                            }
+                        }
+                    }
+                })
                 .state('index.vacancies', {
                     url: '/vacancies',
                     views: {
                         '': {
                             templateUrl: 'templates/vacancies.html',
                             controller: function () {
-                                $('.js-show-content').click(
-                                    function (ev) {
-                                        var $this = $(this),
-                                            $target = $this.siblings('.js-show-content-target'),
-                                            $parent = $this.parent();
-                                        if (!$parent.hasClass('_active')) {
-                                            $target.slideDown('fast');
-                                        } else {
-                                            $target.slideUp('fast');
-                                        }
-
-                                        $parent.toggleClass('_active');
-
-                                        return false;
-                                    }
-                                );
+                                showSiblingByClick();
                             }
                         }
                     }
