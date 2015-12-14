@@ -97,6 +97,18 @@
 
                                 showChildByHoveredParent('js-hovered-menu-item', 'js-hovered-menu-item_dropdown');
 
+                                $('.js-close-all-modals').click(function () {
+                                    $('.b-modal__active').removeClass('b-modal__active');
+                                    $('body').removeClass('overflow-hidden');
+                                    return false;
+                                });
+
+                                $('.js-open-modal-callback').click(function () {
+                                    $('.b-modal-callback, .b-modals_bg').addClass('b-modal__active');
+                                    $('body').addClass('overflow-hidden');
+                                    return false;
+                                });
+
                                 $(window).scroll(
                                     function (ev) {
                                         if (!hasClass && $(document).scrollTop() > 100) {
