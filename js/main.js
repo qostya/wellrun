@@ -92,6 +92,8 @@
                         header: {
                             templateUrl: 'templates/header.html',
                             controller: function () {
+                                showChildByHoveredParent('js-hovered-menu-item', 'js-hovered-menu-item_dropdown');
+
                                 $('.b-header_search_icon').click(function () {
                                     var parent = $('.b-header_search'),
                                         target = $('.b-header_search_field input');

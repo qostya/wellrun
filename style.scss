@@ -33,6 +33,26 @@ a {
   padding-bottom: 20px;
   background-color: #fff;
 
+  &_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    -webkit-box-shadow: 0 1px 8px #000;
+    -moz-box-shadow: 0 1px 8px #000;
+    box-shadow: 0 1px 8px #000;
+
+    li {
+      a {
+        display: block;
+        color: #3d4045;
+        white-space: nowrap;
+        text-decoration: none;
+      }
+    }
+  }
+
   &_search {
     position: relative;
 
@@ -85,7 +105,6 @@ a {
   }
 
   &_phone {
-
     span {
       font-weight: 500;
       font-size: 20px;
@@ -126,9 +145,21 @@ a {
     -webkit-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
     -moz-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
     box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
+    z-index: 2;
+    position: relative;
 
     .navbar-nav {
       height: 50px;
+
+      li {
+        &:hover,
+        &:focus {
+          > a {
+            background-color: #5d6066;
+            color: #fff;
+          }
+        }
+      }
 
       a {
         padding: 15px 25px;
@@ -138,10 +169,9 @@ a {
         -o-transition: background 0.2s;
         transition: background 0.2s;
 
-        &:hover,
         &:focus {
-          background: #5d6066;
-          color: #fff;
+          background-color: #5d6066;
+          color: inherit;
         }
       }
     }

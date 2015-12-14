@@ -25,6 +25,20 @@ a {
   position: relative;
   padding-bottom: 20px;
   background-color: #fff; }
+  .b-header_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    -webkit-box-shadow: 0 1px 8px #000;
+    -moz-box-shadow: 0 1px 8px #000;
+    box-shadow: 0 1px 8px #000; }
+    .b-header_dropdown li a {
+      display: block;
+      color: #3d4045;
+      white-space: nowrap;
+      text-decoration: none; }
   .b-header_search {
     position: relative; }
     .b-header_search_field {
@@ -86,9 +100,14 @@ a {
     color: #fff;
     -webkit-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
     -moz-box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
-    box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74); }
+    box-shadow: 0 1px 3px 1px rgba(86, 86, 86, 0.74);
+    z-index: 2;
+    position: relative; }
     .b-header_top .navbar-nav {
       height: 50px; }
+      .b-header_top .navbar-nav li:hover > a, .b-header_top .navbar-nav li:focus > a {
+        background-color: #5d6066;
+        color: #fff; }
       .b-header_top .navbar-nav a {
         padding: 15px 25px;
         -webkit-transition: background 0.2s;
@@ -96,9 +115,9 @@ a {
         -ms-transition: background 0.2s;
         -o-transition: background 0.2s;
         transition: background 0.2s; }
-        .b-header_top .navbar-nav a:hover, .b-header_top .navbar-nav a:focus {
-          background: #5d6066;
-          color: #fff; }
+        .b-header_top .navbar-nav a:focus {
+          background-color: #5d6066;
+          color: inherit; }
   .b-header_right {
     font-size: 10px;
     font-weight: 600; }
