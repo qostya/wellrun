@@ -51,11 +51,14 @@
         });
     }
 
-    function showSiblingByClick() {
-        $('.js-show-content').click(
+    function showSiblingByClick(el, target) {
+        el = el || 'js-show-content';
+        target = target || 'js-show-content-target';
+
+        $('.' + el).click(
             function (ev) {
                 var $this = $(this),
-                    $target = $this.siblings('.js-show-content-target'),
+                    $target = $this.siblings('.' + target),
                     $parent = $this.parent();
                 if (!$parent.hasClass('_active')) {
                     $target.slideDown('fast');
@@ -95,7 +98,7 @@
                                 var $headerTop = $('.b-header_top'),
                                     hasClass = false;
 
-                                showSiblingByClick();
+                                showSiblingByClick('js-show-content-h', 'js-show-content-target-h');
 
                                 showChildByHoveredParent('js-hovered-menu-item', 'js-hovered-menu-item_dropdown');
 
