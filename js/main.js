@@ -166,8 +166,21 @@
                     views: {
                         '': {
                             templateUrl: 'templates/main.html',
-                            controller: function ($scope) {
+                            controller: function () {
+                                var $scrollTarget = $('.js-scroll-effect'),
+                                    $viewportHeight = $(window).height(),
+                                    $targetPosition = $scrollTarget.offset().top,
+                                    $targetHeight = $scrollTarget.outerHeight(),
+                                    wasScrolled = false;
 
+                                $(window).scroll(
+                                    function() {
+                                        if (!wasScrolled && (($(document).scrollTop() + $viewportHeight) > ($targetPosition + $targetHeight + 400))) {
+                                            $scrollTarget.addClass('__active');
+                                            wasScrolled = true;
+                                        }
+                                    }
+                                );
                                 (function () {
                                     var sliderCount = $('.b-main-slider_wrapper li').length,
                                         pagerWrapper = $('.b-main-slider_pager ul'),

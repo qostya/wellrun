@@ -200,6 +200,7 @@ a.css-link-with-icon {
   color: #fff !important; }
 
 .b-main-slider .bx-wrapper {
+  z-index: 3;
   border: none;
   margin-bottom: 0;
   -webkit-border-radius: 0;
@@ -335,6 +336,14 @@ a.css-link-with-icon {
         left: 2px;
         z-index: 2; }
 
+.js-scroll-effect .b-main-services_item {
+  position: relative;
+  top: -100px;
+  opacity: 0; }
+.js-scroll-effect.__active .b-main-services_item {
+  top: 0;
+  opacity: 1; }
+
 .b-main-services {
   text-align: center;
   cursor: default; }
@@ -346,6 +355,30 @@ a.css-link-with-icon {
     border: 3px solid #3d4045;
     padding-top: 11px;
     margin-bottom: 30px; }
+    .b-main-services_item_1 {
+      -webkit-transition: top 0.3s linear;
+      -moz-transition: top 0.3s linear;
+      -ms-transition: top 0.3s linear;
+      -o-transition: top 0.3s linear;
+      transition: top 0.3s linear; }
+    .b-main-services_item_2 {
+      -webkit-transition: top 0.5s linear;
+      -moz-transition: top 0.5s linear;
+      -ms-transition: top 0.5s linear;
+      -o-transition: top 0.5s linear;
+      transition: top 0.5s linear; }
+    .b-main-services_item_3 {
+      -webkit-transition: top 0.7s linear;
+      -moz-transition: top 0.7s linear;
+      -ms-transition: top 0.7s linear;
+      -o-transition: top 0.7s linear;
+      transition: top 0.7s linear; }
+    .b-main-services_item_4 {
+      -webkit-transition: top 0.9s linear;
+      -moz-transition: top 0.9s linear;
+      -ms-transition: top 0.9s linear;
+      -o-transition: top 0.9s linear;
+      transition: top 0.9s linear; }
     .b-main-services_item_holder {
       position: relative;
       z-index: 2; }
