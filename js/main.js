@@ -92,7 +92,22 @@
                         header: {
                             templateUrl: 'templates/header.html',
                             controller: function () {
+                                var $headerTop = $('.b-header_top'),
+                                    hasClass = false;
+
                                 showChildByHoveredParent('js-hovered-menu-item', 'js-hovered-menu-item_dropdown');
+
+                                $(window).scroll(
+                                    function (ev) {
+                                        if (!hasClass && $(document).scrollTop() > 100) {
+                                            $headerTop.addClass('active');
+                                            hasClass = true;
+                                        } else if (hasClass && $(document).scrollTop() < 100) {
+                                            $headerTop.removeClass('active');
+                                            hasClass = false;
+                                        }
+                                    }
+                                );
 
                                 $('.b-header_search_icon').click(function () {
                                     var parent = $('.b-header_search'),
