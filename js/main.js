@@ -95,6 +95,8 @@
                                 var $headerTop = $('.b-header_top'),
                                     hasClass = false;
 
+                                showSiblingByClick();
+
                                 showChildByHoveredParent('js-hovered-menu-item', 'js-hovered-menu-item_dropdown');
 
                                 $('.js-close-all-modals').click(function () {
