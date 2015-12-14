@@ -278,7 +278,9 @@ a.css-link-with-icon {
   text-align: center;
   font-size: 0;
   margin-top: -50px;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 4; }
   .b-main-slider_pager ul {
     display: inline-block;
     vertical-align: middle;
