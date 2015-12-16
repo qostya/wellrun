@@ -174,13 +174,15 @@
                             controller: function () {
                                 var $scrollTarget = $('.js-scroll-effect'),
                                     $viewportHeight = $(window).height(),
-                                    $targetPosition = $scrollTarget.offset().top,
-                                    $targetHeight = $scrollTarget.outerHeight(),
                                     wasScrolled = false;
 
                                 $(window).scroll(
                                     function() {
-                                        if (!wasScrolled && (($(document).scrollTop() + $viewportHeight) > ($targetPosition + $targetHeight + 400))) {
+                                        var $scrollTop = $(document).scrollTop();
+                                        if (
+                                            !wasScrolled &&
+                                            (($(document).scrollTop() + $viewportHeight) > ($scrollTarget.offset().top + $viewportHeight/3))
+                                        ) {
                                             $scrollTarget.addClass('__active');
                                             wasScrolled = true;
                                         }
