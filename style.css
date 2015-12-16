@@ -213,10 +213,10 @@ a.css-link-with-icon {
   -moz-box-shadow: none;
   box-shadow: none; }
   .b-main-slider .bx-wrapper li {
-    overflow-x: hidden; }
+    overflow: hidden; }
     .b-main-slider .bx-wrapper li > img {
       width: 100%;
-      min-height: 380px; }
+      min-height: 300px; }
 .b-main-slider_block-holder {
   position: absolute;
   top: 0;
