@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Well Run</title>
+    <meta name="viewport" content="width=550, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.min.css"/>
+    <link rel="stylesheet" href="inline-images.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header class="b-header">
+    <div class="b-header_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12 col-xs-12 b-header_logo_holder">
+                    <a class="b-header_logo" href="" ui-sref="index.main">
+                        <img src="images/logo.png" alt="logo well run"/>
+                    </a>
+                </div>
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="js-hovered-menu-item">
+                            <a ui-sref="index.catalog" href="#">О нас</a>
+
+                            <ul class="b-header_dropdown js-hovered-menu-item_dropdown">
+                                <li><a ui-sref="index.vacancies" href="#">Вакансии</a></li>
+                                <li><a ui-sref="index.catalog_additional" href="#">О компании</a></li>
+                                <li><a ui-sref="index.news_item" href="#">Новость</a></li>
+                            </ul>
+                        </li>
+                        <li><a ui-sref="index.services" href="#">Наши услуги</a></li>
+                        <li><a ui-sref="index.catalog_item" href="#">Каталог</a></li>
+                        <li><a ui-sref="index.news" href="#">Новости</a></li>
+                        <li><a ui-sref="index.reviews" href="#">Отзывы</a></li>
+                        <li><a ui-sref="index.contacts" href="#">Контакты</a></li>
+                        <li class="b-header_right">
+                            <table>
+                                <tr>
+                                    <td class="b-header_online js-open-modal-online">
+                                        <div>
+                                            <i class="b-header_online_icon icon-online"></i>
+                                            ОНЛАЙН-ВИДЕО<br/>
+                                            ТРАНСЛЯЦИЯ
+                                        </div>
+                                    </td>
+                                    <td class="lh-0">
+                                        <div class="b-header_search">
+                                            <form action="" method="get">
+                                                <input type="submit" class="b-header_search_icon icon-search" value="" />
+
+                                                <div class="b-header_search_field">
+                                                    <input type="text" placeholder="найти..." name="search"/>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-header_info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">&nbsp;</div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="b-header_company-name">
+                        <strong>СЕТЬ АВТОКОМПЛЕКСОВ</strong>
+                        <h5>Well Run</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="b-header_phone">
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="b-header_phone-icon icon-phone"></i>
+                                </td>
+                                <td>
+                                    <span>8 (4212) 300-000</span><br/>
+                                    <small>ежедневно с 8:00 до 22:00</small>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="b-header_call-me">
+                        <a class="css-btn-empty js-open-modal-callback" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="b-titles">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-8">
+                <ul class="b-titles_titles">
+                    <li>Автомасла</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="b-titles_line">
+            <a href="#" class="b-titles_line_item b-titles_line_item__filled">Легковые автомобили</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__filled">Мотоциклы</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__filled _active">Трансмиссионные и автоматические масла</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__filled">Тормозные и специальные жидкости</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__filled">Защита от мороза</a>
+        </div>
+
+        <div class="b-titles_line_left">
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty">Mobil</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty">Castrol</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty">Shell</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty _active">NGN</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty">Kroon-oil</a>
+            <a href="#" class="b-titles_line_item b-titles_line_item__empty">Оригинальные масла</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="b-catalog-additional">
+    <div class="container">
+        <div class="b-breadcrumbs">
+            <a href="#">Главная</a> | <a href="#">Масло Kuttenkeuler</a> | <span>Трансмиссионные и автоматические масла</span>
+        </div>
+
+        <div class="b-products-container row">
+            <div class="b-product-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="b-product-block_line b-catalog-additional_with-line">
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="b-products-container row">
+            <div class="b-product-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="b-product-block_line b-catalog-additional_with-line">
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4 class="b-main-carousel_body_title">
+                                    <a href="#">Ultrasyn Plus 0W40 синтетическое моторное масло</a>
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <td class="b-main-carousel_body_left">
+                                            <a href="#">
+                                                <img src="images/static/carousel_1.jpg" alt=""/>
+                                            </a>
+
+                                            <div class="icon-star-set" data-starscount="2">
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star icon-star__gold"></div>
+                                                <div class="icon-star"></div>
+                                                <div class="icon-star"></div>
+                                            </div>
+                                        </td>
+                                        <td class="b-main-carousel_body_right">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur dignissimos dolorem doloribus eveniet facere.
+                                            </p>
+
+                                            <div class="b-main-carousel_body_right_bottom">
+                                                <a href="#" class="b-main-carousel_body_right_bottom_cart icon-cart"></a>
+                                                <strong>700 <small>руб</small></strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="b-pagination">
+    <ul>
+        <li class="b-pagination_arrow b-pagination_arrow__left"><a href="#" class="icon-pagination-arrows">&nbsp;</a></li>
+        <li><a href="#">1</a></li>
+        <li class="_active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li class="b-pagination_arrow b-pagination_arrow__right"><a href="#" class="icon-pagination-arrows">&nbsp;</a></li>
+    </ul>
+</div>
+
+<footer class="b-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="b-footer_copyrights">
+                    <h3>ООО "<strong>Well Run</strong>"</h3>
+                    <span>сеть автокомплексов</span><br/>
+                    <small>Все права защищены &copy; <span id="js-footer-year"></span></small>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="b-footer_normal">
+                    <h4>Наши адреса</h4>
+                    <p>
+                        ул.Ким-Ю-Чена д.44<br/>
+                        Монтажная д.43<br/>
+                        ул.Брестская д.1 а
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <div class="b-footer_normal">
+                    <h4>&nbsp;</h4>
+                    <p>
+                        ул.Большая д.98<br/>
+                        ул. Бийская д.1 а<br/>
+                        ул.Павла Морозова д.28
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="b-footer_normal">
+                    <h4>Социальные сети</h4>
+                    <p>
+                        Нашим подписчикам<br/>
+                        бесплатная диагностика<br/>
+                        ходовой
+                    </p>
+
+                    <div class="b-footer_social">
+                        <a href="#" class="icon-social b-footer_social__fb"></a>
+                        <a href="#" class="icon-social b-footer_social__ig"></a>
+                        <a href="#" class="icon-social b-footer_social__vk"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-8 col-xs-8">
+                <a href="http://web-alt.ru" target="_blank" class="b-footer_studio">
+                    <span>Сайт разработан</span><br>
+                    WEB ALTERNATIVE
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="b-modals">
+    <div class="b-modal-callback">
+        <div class="b-modal-callback_wrapper">
+            <form action="/" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="b-modal-callback_field css-input-required"><input type="text" placeholder="ФИО / наименование организации"/></div>
+                        <div class="b-modal-callback_field css-input-required"><input type="text" placeholder="Контактный телефон"/></div>
+                        <div class="b-modal-callback_field"><input type="text" placeholder="E-mail"/></div>
+
+                        <div class="b-modal-callback_submit_message">Спасибо, ваше сообщение отправлено.<br/>В ближайшее время с вами свяжется наш менеджер.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="b-modal-callback_field css-input-triangle">
+                            <textarea placeholder="Текст Вашего сообщения"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-modal-callback_submit">
+                    <input type="submit" value="ОТПРАВИТЬ СООБЩЕНИЕ"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="b-modal-online">
+        <h3>Выберите нужную камеру</h3>
+
+        <div class="b-modal-online_slide">
+            <div class="js-show-content-h">
+                <i class="icon-online-black"></i>
+                <div class="b-modal-online_slide_head">ул.Ким-Ю-Чена д.44</div>
+            </div>
+
+            <div class="b-modal-online_slide_body js-show-content-target-h">
+                <ul>
+                    <li><a href="#">Ремонтный цех №1</a></li>
+                    <li><a href="#">Ремонтный цех №2</a></li>
+                    <li><a href="#">Ремонтный цех №3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="b-modal-online_slide">
+            <div class="js-show-content-h">
+                <i class="icon-online-black"></i>
+                <div class="b-modal-online_slide_head">ул.Ким-Ю-Чена д.44</div>
+            </div>
+
+            <div class="b-modal-online_slide_body js-show-content-target-h">
+                <ul>
+                    <li><a href="#">Ремонтный цех №1</a></li>
+                    <li><a href="#">Ремонтный цех №2</a></li>
+                    <li><a href="#">Ремонтный цех №3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="b-modal-online_slide">
+            <div class="js-show-content-h">
+                <i class="icon-online-black"></i>
+                <div class="b-modal-online_slide_head">ул.Ким-Ю-Чена д.44</div>
+            </div>
+
+            <div class="b-modal-online_slide_body js-show-content-target-h">
+                <ul>
+                    <li><a href="#">Ремонтный цех №1</a></li>
+                    <li><a href="#">Ремонтный цех №2</a></li>
+                    <li><a href="#">Ремонтный цех №3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="b-modal-online_slide">
+            <div class="js-show-content-h">
+                <i class="icon-online-black"></i>
+                <div class="b-modal-online_slide_head">ул.Ким-Ю-Чена д.44</div>
+            </div>
+
+            <div class="b-modal-online_slide_body js-show-content-target-h">
+                <ul>
+                    <li><a href="#">Ремонтный цех №1</a></li>
+                    <li><a href="#">Ремонтный цех №2</a></li>
+                    <li><a href="#">Ремонтный цех №3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="b-modal-online_message">
+            <i class="icon-tech"></i>
+            <p>Сервис находится в разработке,<br/>
+                пожалуйста, зайдите позже.</p>
+        </div>
+    </div>
+
+    <div class="b-modals_bg js-close-all-modals"></div>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
