@@ -67,6 +67,10 @@
     .b-main-slider_second-block_right h3 {
         font-size: 16px;
     }
+
+    .b-modal-callback {
+        height: 450px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -102,5 +106,9 @@
 @media (max-width: 550px) {
     .container {
         width: 500px;
+    }
+
+    .b-modal-callback {
+        height: 500px;
     }
 }
