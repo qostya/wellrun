@@ -408,7 +408,7 @@ a {
       span {
         font-size: 16px;
       }
-      
+
       small {
         font-size: 14px;
         line-height: 35px;
@@ -651,7 +651,7 @@ a {
     border: none;
     box-shadow: none;
   }
-  
+
   h5 {
     margin-top: 18px;
     font-weight: 600;
@@ -690,6 +690,23 @@ a {
       padding-left: 30px;
       vertical-align: top;
       position: relative;
+
+      p {
+        height: 113px;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 35px;
+          box-shadow: 0px -37px 40px -15px #fff inset;
+          bottom: 0;
+          left: 0;
+        }
+      }
 
       &_bottom {
         position: absolute;
@@ -842,6 +859,7 @@ a {
     -ms-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    z-index: 50;
 
     &:hover {
       opacity: 1;
@@ -1108,7 +1126,7 @@ a {
   text-align: center;
   padding: 40px 0;
   line-height: 0;
-  
+
   ul {
     display: inline-block;
   }
@@ -1189,6 +1207,7 @@ a {
     -ms-transition: background 0.2s;
     -o-transition: background 0.2s;
     transition: background 0.2s, color 0.2s;
+    display: inline-block;
 
     .icon-cart {
       width: 35px;
@@ -1367,7 +1386,7 @@ a {
     width: 20px;
     display: block;
     height: 19px;
-    
+
     &:hover {
       background-color: #5d6066;
       cursor: pointer;
@@ -1471,7 +1490,7 @@ a {
         }
       }
     }
-    
+
     &:first-of-type {
       padding-top: 20px;
     }
@@ -1953,7 +1972,7 @@ a {
         margin-top: 25px;
         padding-left: 10px;
         display: none;
-        
+
         li {
           margin-bottom: 5px;
           list-style: none;
@@ -2021,12 +2040,12 @@ a {
       font-weight: bold;
     }
   }
-  
-  
+
   &-callback {
     display: none;
-    width: 630px;
-    height: 300px;
+    max-width: 630px;
+    width: 90%;
+    min-width: 320px;
     position: fixed;
     top: 80px;
     left: 0;
@@ -2143,22 +2162,3 @@ div.b-modal__active {
   height: 100%;
   background-color: #d6282d;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -691,6 +691,23 @@ a {
       vertical-align: top;
       position: relative;
 
+      p {
+        height: 113px;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 35px;
+          box-shadow: 0px -37px 40px -15px #fff inset;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
       &_bottom {
         position: absolute;
         bottom: 0;
@@ -842,6 +859,7 @@ a {
     -ms-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    z-index: 50;
 
     &:hover {
       opacity: 1;
@@ -1189,6 +1207,7 @@ a {
     -ms-transition: background 0.2s;
     -o-transition: background 0.2s;
     transition: background 0.2s, color 0.2s;
+    display: inline-block;
 
     .icon-cart {
       width: 35px;
@@ -2021,12 +2040,12 @@ a {
       font-weight: bold;
     }
   }
-  
-  
+
   &-callback {
     display: none;
-    width: 630px;
-    height: 300px;
+    max-width: 630px;
+    width: 90%;
+    min-width: 320px;
     position: fixed;
     top: 80px;
     left: 0;
